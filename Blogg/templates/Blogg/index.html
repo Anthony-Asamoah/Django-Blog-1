@@ -10,25 +10,14 @@
             <h1> Blog by @Sean_or_Tony</h1>
         </div>
         <div class="content">
+            {% for post in post %}
             <article>
-                <h2><a href="">My first post</a></h2>
-                <p>
-                    Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo,
-                    tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                </p>
-                <time>published: 14.06.2014, 12:14</time>
+                <h2><a href="">{{ post.title }}</a></h2>
+                <h3>By: {{ post.author }}</h3>
+                <p>{{ post.content }}</p>
+                <time>published: {{ post.date_published }}</time>
             </article>
-
-            <article>
-                <h2><a href="">My second post</a></h2>
-                <p>
-                    Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo,
-                    tortor mauris condimentum nibh, ut f.
-                </p>
-                <time>published: 14.06.2014, 12:14</time>
-            </article>
+            {% endfor %}
         </div>
         <div class="footer">
             <footer>
