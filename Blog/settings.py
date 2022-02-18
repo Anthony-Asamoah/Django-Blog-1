@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -121,15 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-
-# this is directory name where collect static files command will put your app level static files
-STATIC_ROOT = 'staticfiles'
-
-# this is directory paths where you have to put your project level static files
-# you can put multiple folders here
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "static"),
-)
+STATIC_ROOT = BASE_DIR / 'static'
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 

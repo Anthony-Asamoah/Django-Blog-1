@@ -28,9 +28,13 @@ body {
 }
 
 .content a {color:darkcyan;}
-.content a:link {text-decoration: none; color:darkgray;}
-.content a:active {text-decoration: none; color:darkgray;}
-.content a:visited {text-decoration:none;}
+.content a:link {text-decoration: none; color:darkcyan;}
+.content a:active {text-decoration: none; color:darkcyan;}
+.content a:visited {text-decoration:none; color:darkcyan;}
+
+a button {
+    border-radius: 10px;
+}
 
 article {
     background-color:white;
@@ -55,6 +59,7 @@ article {
     font-family:serif;
     color: darkcyan;
 }
+
 
 .footer {
     text-align:center;
