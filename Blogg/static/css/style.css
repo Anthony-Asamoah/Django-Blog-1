@@ -6,7 +6,8 @@ body {
 .head {
     background-color: darkcyan;
     color: white;
-    padding:40px;
+    padding: 100px 40px 40px;
+
 }
 
 .head h1 {
@@ -23,6 +24,7 @@ body {
     padding:40px;
     border-top-right-radius: 15px;
     border-top-left-radius: 15px;
+    min-width: 600px;
 }
 
 .content a {color:darkcyan;}
