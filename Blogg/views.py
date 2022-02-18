@@ -20,7 +20,7 @@ def index(request):
 
 def post_detail(request, pk):
 	post = get_object_or_404(Post, pk=pk)
-	return render(request, 'blogg/post_details.html', {
+	return render(request, 'Blogg/post_details.html', {
 		'post': post,
 		'day': day,
 		'day_num': day_num
